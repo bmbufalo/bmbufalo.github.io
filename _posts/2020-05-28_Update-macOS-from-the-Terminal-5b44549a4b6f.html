@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Update macOS from the Terminal</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Update macOS from the Terminal</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Even if you are not able to physically access the Mac!
+</section>
+<section data-field="body" class="e-content">
+<section name="3c78" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="548c" id="548c" class="graf graf--h3 graf--leading graf--title">Update macOS from the Terminal</h3><h4 name="9a58" id="9a58" class="graf graf--h4 graf-after--h3 graf--subtitle">Even if you are not able to physically access the Mac!</h4><p name="8db5" id="8db5" class="graf graf--p graf-after--h4">While Apple has made the process of updating a Mac simple and easy, if you have to update more than one computer or update a remote Mac, this process can quickly become tedious. And the whole reason computers were invented was to remove such menial tasks! Below are two commands that will allow you to automate the process of updating and restarting your Mac. Please note that you will need to use an account that has administrative privileges on the Mac’s you plan on updating. More information on this is available on <a href="https://support.apple.com/guide/mac-help/set-up-other-users-on-your-mac-mtusr001/mac" data-href="https://support.apple.com/guide/mac-help/set-up-other-users-on-your-mac-mtusr001/mac" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Apple’s Support page</a>.</p><p name="276b" id="276b" class="graf graf--p graf-after--p">Open the Terminal app, found under:</p><blockquote name="d7ca" id="d7ca" class="graf graf--blockquote graf-after--p">Applications/Utilities/Terminal.app</blockquote><p name="d150" id="d150" class="graf graf--p graf-after--blockquote">And enter this command:</p><blockquote name="27de" id="27de" class="graf graf--blockquote graf-after--p">sudo softwareupdate -ia</blockquote><p name="b532" id="b532" class="graf graf--p graf-after--blockquote">The <a href="https://en.wikipedia.org/wiki/Sudo" data-href="https://en.wikipedia.org/wiki/Sudo" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">sudo</em></a> command elevates your access to an administrative mode and any commands you enter for the next few moments will also be elevated with this ability, so use this wisely! When prompted, enter your Mac’s password. The <em class="markup--em markup--p-em">softwareupdate</em> command sounds exactly as you would think and is used to access the same process found in System Preferences (or on older Macs, in the App Store…or on even older Mac’s back in System Preferences!).</p><p name="edbc" id="edbc" class="graf graf--p graf-after--p">There are a slew of other options the softareupdate command can execute, including automatically rebooting your Mac, simply entering the command <em class="markup--em markup--p-em">softwareupdate</em> will show some options and you can use the built in <a href="https://en.wikipedia.org/wiki/Man_page" data-href="https://en.wikipedia.org/wiki/Man_page" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">man</em></a> (short for manual) pages to learn more by entering: <em class="markup--em markup--p-em">man softwareupdate</em> (If you have never used man before, pressing “q” on your keyboard will exit the manual and return you to the command prompt). The reason I leave out the automatic reboot after the updates are ready to be applied is that, any modern Mac generally has FileVault encryption enabled by default and if you were to include the option to automatically reboot, you would be locked out of your remote Mac until you were able to gain physical access to it and enter in the unlock credentials. But there is a command for that too! Entering the below command, after your updates complete, will reboot your Mac and skip the initial login because you basically front load those credentials:</p><blockquote name="4a36" id="4a36" class="graf graf--blockquote graf-after--p">sudo fdesetup authrestart</blockquote><p name="ef64" id="ef64" class="graf graf--p graf-after--blockquote">Notice, again, that <em class="markup--em markup--p-em">sudo</em> is used to elevate to administrate from the Terminal and the other command, <em class="markup--em markup--p-em">fdsetup</em>, can also be used for so much more and is worth exploring further by running <em class="markup--em markup--p-em">man fdsetup</em> to learn more about. You may be prompted to enter your Mac’s password to elevate to administrate your Mac, and the <em class="markup--em markup--p-em">fdsetup authrestart</em> will prompt you for a username and password of a user that has permissions to unlock the FileVault encryption. For most, this is the same username and password used to unlock their Mac on startup. After you have entered in the credentials, the Mac will immediately reboot, apply any remaining update processes, and log back into the Mac. Now, one last tip is that you can string these two commands together to allow you to update and complete an authorized restart from a single command! You simply combine the two commands with <em class="markup--em markup--p-em">&amp;&amp;</em> which tells the computer to run the first command and, only if it succeeds, run the second command. If the <em class="markup--em markup--p-em">softwareupdate</em> command fails, the second command will not execute.</p><blockquote name="e960" id="e960" class="graf graf--blockquote graf-after--p">sudo softwareupdate -ia &amp;&amp; sudo fdesetup authrestart</blockquote><p name="386a" id="386a" class="graf graf--p graf-after--blockquote graf--trailing">This one-line command allows you to quickly run updates and reboot Mac’s that you are either physically able to type them into or by remotely accessing them (such as by <a href="https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac" data-href="https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">enabling SSH</a> and remotely entering the commands), without worrying about loosing remote connectivity when the Mac reboots. A note of caution when using <em class="markup--em markup--p-em">fdsetup authrestart</em>, you are circumventing those same FileVault encryption designed to protect your remote Mac so, be sure and use this in a setting where you know the remote Mac is safe unauthorized physical access to the remote computer. But if you have several Mac’s, this would allow you to run these commands on each and update them quickly and efficiently. Enjoy!</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bmbufalo" class="p-author h-card">Brian M. Bufalo</a> on <a href="https://medium.com/p/5b44549a4b6f"><time class="dt-published" datetime="2020-05-28T17:08:41.509Z">May 28, 2020</time></a>.</p><p><a href="https://medium.com/@bmbufalo/update-macos-from-the-terminal-5b44549a4b6f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on June 14, 2020.</p></footer></article></body></html>
