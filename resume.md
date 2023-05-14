@@ -1,3 +1,9 @@
+---
+layout: page
+title: Resume
+permalink: /resume/
+---
+
 # Resume
 
 ` Brian Bufalo | brian@bufalo.me | 205.482.6250 | 8003 Rockhampton Circle, Helena, AL 35080`
