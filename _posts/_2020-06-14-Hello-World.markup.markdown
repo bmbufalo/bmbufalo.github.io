@@ -1,5 +1,5 @@
 ---
-# layout: post
+layout: post
 title:  "Hello World!"
 date:   2020-06-14 13:21:37 -0500
 categories: first

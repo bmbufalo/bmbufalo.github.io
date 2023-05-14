@@ -1,5 +1,5 @@
 ---
-# layout: post
+layout: post
 title:  "Expanding Testing of Git"
 date:   2021-06-19 22:50:37 -0500
 categories: jekyll update git github
