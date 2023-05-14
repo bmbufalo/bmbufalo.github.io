@@ -5,11 +5,7 @@
 layout: home
 ---
 
-# Home
-
 Welcome!
-
-# Hire me
 
 [Resume][resume]
 
