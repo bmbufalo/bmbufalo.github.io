@@ -5,6 +5,7 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
+bundle add jekyll-mastodon_webfinger
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.1.0"
@@ -16,6 +17,7 @@ gem "minima", "~> 2.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "mastodon_webfinger"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

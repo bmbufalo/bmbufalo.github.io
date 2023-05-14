@@ -4,10 +4,6 @@ title: Resume
 permalink: /resume/
 ---
 
-``` text
-Brian Bufalo | brian@bufalo.me | 205.482.6250 | 8003 Rockhampton Circle, Helena, AL 35080
-```
-
 ## Education
 
 ### University of Montevallo -- 2012-2019
