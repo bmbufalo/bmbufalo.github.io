@@ -5,8 +5,3 @@
 layout: home
 ---
 
-Welcome!
-
-[Resume][resume]
-
-[resume]:resume.markdown
