@@ -6,7 +6,7 @@ permalink: /resume/
 
 ## Education
 
-- University of Montevallo -- Bachelors of Arts in History
+- University of Montevallo -- Bachelors of Arts in History, 2019
 
 ## Work History
 
@@ -15,12 +15,12 @@ permalink: /resume/
 #### System Administrator II, Windows
 
 ```
-Birmingham, AL |40 Hours per week | November 2021-Present
+Birmingham, AL | 40 Hours per week | November 2021-Present
 ```
 
-- Deployed PowerShell and Python scripts to improve automation reportingresulting in increased efficiency and productivity.
+- Deployed PowerShell and Python scripts to improve automation reporting resulting in increased efficiency and productivity.
 - Completely revamped Windows Server patching process using Ansible, resulting in faster and more streamlined process to successfully patch over 2,000 servers.
-- Led a company-wide inventory project in coordination with Accenture to inventory all servers (Windows and Linux) in preparation for AWS Cloud migration.
+- Led a company-wide project in coordination with Accenture to inventory all servers (Windows and Linux) in preparation for AWS Cloud migration.
 - Participated in a rotating week-long on-call schedule to ensure 24/7 support.
 
 ### C Spire
@@ -61,7 +61,7 @@ Hoover, AL | 32-40 Hours per week | June 2006-January 2008
 ```
 
 - Provided award-winning customer service to all customers
-- Diagnos and troubleshoot a wide variety of hardware and software issues for all major platforms, including Windows and Mac personal computing devices.
+- Diagnose and troubleshoot a wide variety of hardware and software issues for all major platforms, including Windows and Mac personal computing devices.
 - Assisted with sales and retail activities as required, including late-night Black Friday events.
 - Document all repairs, services, and installations in a timely and accurate manner.
 - Work independently and collaboratively with other team members to meet company goals and deadlines.
@@ -91,12 +91,10 @@ San Diego, CA | 40+ Hours per week | 2002-2006
 #### Airman
 
 - Managed personnel and training records for an over 70 person department, ensuring compliance with all regulations and requirements.
-- Assist in the movement and securing of aircraft on the flight deck.
-- Perform routine maintenance and cleaning of equipment and the flight deck.
 - Assist in the safe launch and recovery of aircraft by directing pilots, handling tie-down chains, and performing other necessary tasks.
 - Follow strict safety procedures at all times, including wearing appropriate personal protective equipment (PPE).
 - Work as part of a team to ensure the safe and efficient operation of the flight deck.
-- Participate in ongoing training to improve skills and knowledge related to aircraft operations and safety.
+- Participate in ongoing training to improve skills and knowledge related to aircraft operations, firefighting, and safety.
 
 ## Certifications and Training
 
