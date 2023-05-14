@@ -4,3 +4,13 @@
 
 layout: home
 ---
+
+# Home
+
+Welcome!
+
+# Hire me
+
+[Resume][resume]
+
+[resume]:resume.markdown
